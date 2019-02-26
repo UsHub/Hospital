@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="Hospital"></dbname>
+
+    <version value="8"></version>
+    <list>
+        <mapping class="com.gameex.dw.hospital.entity.User"></mapping>
+        <mapping class="com.gameex.dw.hospital.entity.Hosregister"></mapping>
+        <mapping class="com.gameex.dw.hospital.entity.Doctor"></mapping>
+        <mapping class="com.gameex.dw.hospital.entity.Information"></mapping>
+        <mapping class="com.gameex.dw.hospital.entity.Role"></mapping>
+    </list>
+</litepal>

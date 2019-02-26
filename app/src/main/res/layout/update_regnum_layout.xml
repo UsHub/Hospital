@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gameex.dw.hospital.titleBar.TitleBarView
+        android:id="@+id/update_regnum_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/btn_normal"
+        app:centerTextColor="@color/white">
+
+    </com.gameex.dw.hospital.titleBar.TitleBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ecf2fa"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_name_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hosR_name_et_dur"
+                        android:layout_width="303dp"
+                        android:layout_height="43dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="110dp"
+                        android:textColor="#333333"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="姓    名："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_idCard_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hosR_idCard_et_dur"
+                        android:layout_width="303dp"
+                        android:layout_height="43dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="110dp"
+                        android:textColor="#333333"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="身份证号："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_medical_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hosR_medical_et_dur"
+                        android:layout_width="303dp"
+                        android:layout_height="43dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="110dp"
+                        android:textColor="#333333"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="社 保 号："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_regPrice_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hosR_regPrice_et_dur"
+                        android:layout_width="303dp"
+                        android:layout_height="43dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="110dp"
+                        android:textColor="#333333"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="挂 号 费："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_phone_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hosR_phone_et_dur"
+                        android:layout_width="303dp"
+                        android:layout_height="43dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="110dp"
+                        android:textColor="#333333"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="联系电话："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_selfPrice_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="303dp"
+                    android:layout_height="43dp">
+
+                    <RadioGroup
+                        android:id="@+id/hosR_selfPrice_et_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="110dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:paddingRight="20dp"
+                            android:text="是"
+                            android:textColor="#333333"
+                            android:textSize="20sp"/>
+
+                        <RadioButton
+                            android:id="@+id/no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:text="否"
+                            android:textColor="#333333"
+                            android:textSize="20sp"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="是否自费："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_sex_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="303dp"
+                    android:layout_height="43dp">
+
+                    <RadioGroup
+                        android:id="@+id/hosR_sex_et_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="110dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:paddingRight="20dp"
+                            android:text="男"
+                            android:textColor="#333333"
+                            android:textSize="20sp"/>
+
+                        <RadioButton
+                            android:id="@+id/woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:text="女"
+                            android:textColor="#333333"
+                            android:textSize="20sp"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="性    别："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_age_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hosR_age_et_dur"
+                        android:layout_width="303dp"
+                        android:layout_height="43dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="110dp"
+                        android:textColor="#333333"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="年    龄："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_work_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hosR_work_et_dur"
+                        android:layout_width="303dp"
+                        android:layout_height="43dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="110dp"
+                        android:textColor="#333333"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="职    业："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_lookDoctor_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="303dp"
+                    android:layout_height="43dp">
+
+                    <RadioGroup
+                        android:id="@+id/hosR_lookDoctor_et_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="110dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:paddingRight="20dp"
+                            android:text="初诊"
+                            android:textColor="#333333"
+                            android:textSize="20sp"/>
+
+                        <RadioButton
+                            android:id="@+id/second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:text="复诊"
+                            android:textColor="#333333"
+                            android:textSize="20sp"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="初 复 诊："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/d_keshi_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="303dp"
+                    android:layout_height="43dp">
+
+                    <Spinner
+                        android:id="@+id/d_keshi_sp_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="110dp"
+                        android:dropDownWidth="150dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="所挂科室："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/d_name_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="303dp"
+                    android:layout_height="43dp">
+
+                    <Spinner
+                        android:id="@+id/d_name_sp_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_centerVertical="true"
+                        android:dropDownWidth="150dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="20dp"
+                        android:text="指定医生："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/hosR_remark_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/hosR_remark_et_dur"
+                        android:layout_width="303dp"
+                        android:layout_height="106dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:paddingLeft="110dp"
+                        android:paddingTop="10dp"
+                        android:textColor="#333333"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="备    注："
+                        android:textColor="#333333"
+                        android:textSize="18sp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/reg_btn_sur"
+                android:layout_width="237dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/btn_bg_selector"
+                android:text="挂  号"
+                android:textColor="#ffffff"
+                android:textSize="23sp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

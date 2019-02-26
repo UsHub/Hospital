@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".updateAndRegnum.UpdateRegnumActivity">
+
+    <ImageView
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:src="@drawable/login_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/user_rl"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <RelativeLayout
+        android:id="@+id/user_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:theme="@style/Hospital_et"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:hint="请输入账号"
+            android:maxLength="5"
+            android:paddingLeft="45dp"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/icon_user"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pwd_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_rl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:theme="@style/Hospital_et"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:paddingLeft="45dp"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/icon_pwd"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forgot_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_rl"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+        android:text="忘记密码?"
+        android:textColor="#303F9F"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_bg_selector"
+        android:text="登录"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还没有账户？"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即注册"
+            android:textColor="#303F9F"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

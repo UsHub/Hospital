@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf2fa"
+    tools:context=".bottomBar.BottomBarActivity">
+
+    <com.gameex.dw.hospital.titleBar.TitleBarView
+        android:id="@+id/tile_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/btn_normal"
+        app:centerTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.gameex.dw.hospital.titleBar.TitleBarView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="60dp"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation_menu"/>
+
+</android.support.constraint.ConstraintLayout>

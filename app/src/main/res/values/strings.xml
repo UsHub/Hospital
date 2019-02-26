@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">医院管理平台</string>
+    <string name="title_activity_bottom_bar">BottomBarActivity</string>
+    <string name="title_function">功能选择</string>
+    <string name="title_dashboard">挂号信息管理</string>
+    <string name="title_mine">我的</string>
+    <string name="frag_home_item_text">文字</string>
+
+    <string-array name="d_keshi">
+        <item>骨科</item>
+        <item>血液科</item>
+        <item>神经科</item>
+    </string-array>
+
+    <string-array name="d_name_boot">
+        <item>骨科医生1</item>
+        <item>骨科医生2</item>
+        <item>骨科医生3</item>
+    </string-array>
+
+    <string-array name="d_name_blood">
+        <item>血液科医生1</item>
+        <item>血液科医生2</item>
+        <item>血液科医生3</item>
+    </string-array>
+
+    <string-array name="d_name_head">
+        <item>神经科医生1</item>
+        <item>神经科医生2</item>
+        <item>神经科医生3</item>
+    </string-array>
+
+</resources>

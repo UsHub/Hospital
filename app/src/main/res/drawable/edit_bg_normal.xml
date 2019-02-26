@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item-->
+        <!--android:left="2dp"-->
+        <!--android:top="2dp"-->
+        <!--android:right="2dp"-->
+        <!--android:bottom="2dp">-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<gradient-->
+                <!--android:angle="270"-->
+                <!--android:endColor="#7F000000"-->
+                <!--android:startColor="#0F000000"/>-->
+            <!--&lt;!&ndash;<solid android:color="@android:color/transparent"/>&ndash;&gt;-->
+            <!--<corners android:radius="6dip"/>-->
+            <!--&lt;!&ndash;<stroke&ndash;&gt;-->
+            <!--&lt;!&ndash;android:width="1dip"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:color="@color/blue"/>&ndash;&gt;-->
+        <!--</shape>-->
+
+    <!--</item>-->
+
+    <item
+        android:left="4dp"
+        android:top="4dp"
+        android:right="4dp"
+        android:bottom="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="#1F000000"
+                android:startColor="#FFFFFF"/>
+            <corners android:radius="6dip"/>
+        </shape>
+
+    </item>
+
+    <!--最底层的view-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1F666666"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+
+    <!--最上面的View-->
+    <item
+        android:left="4dp"
+        android:top="4dp"
+        android:right="4dp"
+        android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/>
+            <corners android:radius="10dp"/>
+            <!--<stroke-->
+            <!--android:width="1dp"-->
+            <!--android:color="#eeeeee"/>-->
+        </shape>
+
+    </item>
+</layer-list>
